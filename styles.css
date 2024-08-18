@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(15, 23, 42);
+    color: white;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(30, 41, 59);
+    padding: 10px 20px;
+    padding-left: clamp(10px, calc(10px + (200 - 10) * ((100vw - 300px) / (1600 - 300))), 200px);
+    padding-right: clamp(10px, calc(10px + (200 - 10) * ((100vw - 300px) / (1600 - 300))), 200px);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(234, 179, 8);
+}
+
+.panel-button a {
+    padding: 10px 20px;
+    margin-left: 20px;
+    background-color: rgb(234, 179, 8);
+    border-radius: 20px;
+    color: rgb(15, 23, 42);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.panel-button a:hover {
+    background-color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+    text-align: left;
+}
+
+.kvm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.intro-image img {
+    max-width: clamp(200px, calc(200px + (500 - 200) * ((100vw - 300px) / (1600 - 300))), 500px);
+    margin-left: clamp(10px, calc(10px + (50 - 10) * ((100vw - 300px) / (1600 - 300))), 50px);
+    border-radius: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 7vh 0;
+}
+
+.feature {
+    max-width: 300px;
+    text-align: center;
+}
+
+.feature h2 {
+    color: rgb(234, 179, 8);
+    margin-bottom: 10px;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.plan-card {
+    background-color: rgb(30, 41, 59);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+    width: 260px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.plan-card h3 {
+    color: rgb(234, 179, 8);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.plan-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.plan-card .price span {
+    font-size: 1rem;
+    color: rgb(158, 158, 158);
+}
+
+.plan-card h4 {
+    margin-top: 20px;
+    color: rgb(158, 158, 158);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.plan-card ul.features {
+    display: block;
+    padding-left: 0;
+    margin-top: 0;
+    padding: 10px 0;
+}
+
+.plan-card ul.features li {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.plan-card ul.features li i {
+    margin-right: 10px;
+    color: rgb(234, 179, 8);
+    min-width: 20px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.configure-button {
+    background-color: rgb(234, 179, 8);
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.configure-button:hover {
+    background-color: white;
+}
+
+footer {
+    margin-top: auto;
+    background-color: rgb(30, 41, 59);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-links ul li {
+    margin-left: 20px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: rgb(234, 179, 8);
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: rgb(234, 179, 8);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: clamp(10px, calc(10px + (200 - 10) * ((100vw - 300px) / (1600 - 300))), 200px);
+    padding-right: clamp(10px, calc(10px + (200 - 10) * ((100vw - 300px) / (1600 - 300))), 200px);
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-content a:hover {
+    color: rgb(234, 179, 8);
+}
+
+@media screen and (max-width: 850px) {
+	.intro-image img {
+		display: none !important;
+	}
+	.features {
+		display: grid !important; 
+	}
+    .home {
+        padding: 0;
+    }
+}
