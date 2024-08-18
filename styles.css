@@ -71,12 +71,11 @@ main {
     text-align: left;
 }
 
-.kvm {
+.plans-title {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    text-align: left;
 }
 
 .intro-text {
